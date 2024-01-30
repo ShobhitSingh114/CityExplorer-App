@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CityExplorer App</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="choose_your_city">Choose Your City</string>
+    <string name="places_to_visit">Places to visit in %s</string>
+    <string name="activity_places">Activity Places in %s</string>
 </resources>
