@@ -6,4 +6,21 @@
     <string name="choose_your_city">Choose Your City</string>
     <string name="places_to_visit">Places to visit in %s</string>
     <string name="activity_places">Activity Places in %s</string>
+
+
+    <string name="delhi">Delhi</string>
+    <string name="del_2_Lines">
+        Delhi, India\'s capital, is a blend of historical monuments and modernity, featuring landmarks like the Red Fort and vibrant street markets.
+    </string>
+
+    <string name="mumbai">Mumbai</string>
+    <string name="mum_2_lines">
+        Mumbai, the financial hub, thrives with Bollywood glamour, bustling markets, and the iconic Marine Drive along the Arabian Sea.
+    </string>
+
+    <string name="chennai">Chennai</string>
+    <string name="che_2_lines">
+        Chennai, on the southeastern coast, is known for its rich cultural heritage, classical music, and the Marina Beach, offering a unique mix of tradition and modern urban life.
+    </string>
+
 </resources>
