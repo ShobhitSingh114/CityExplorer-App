@@ -111,7 +111,7 @@ fun CityText(
 
 @Preview(showSystemUi = true)
 @Composable
-fun Xyz() {
+fun CityScreenPreview() {
     LazyColumn{
         items(DataSource.cities){
             CityScreen(

@@ -8,6 +8,8 @@
     <string name="activity_places">Activity Places in %s</string>
 
 
+    <!-- city -->
+
     <string name="delhi">Delhi</string>
     <string name="del_2_Lines">
         Delhi, India\'s capital, is a blend of historical monuments and modernity, featuring landmarks like the Red Fort and vibrant street markets.
@@ -22,5 +24,72 @@
     <string name="che_2_lines">
         Chennai, on the southeastern coast, is known for its rich cultural heritage, classical music, and the Marina Beach, offering a unique mix of tradition and modern urban life.
     </string>
+
+
+    <!-- 7 places to visit [Delhi] -->
+
+    <string name="indiaGate">India Gate</string>
+    <string name="indiaGateInfo">
+        Does this iconic site even need any introduction? Defining India, this monument which was erected in 1931 is one of the best Delhi Tourist Attractions and serves as a revered memorial for the martyrs from the World War I and Afghanistan war. Looking its best in the night, lined with beautiful lights, it is one site that is also highly frequented by the locals. India gate is one of the most beautiful places to visit in Delhi at night!
+    </string>
+    
+    <string name="rashtraPatiBhawan">Rashtrapati Bhawan</string>
+    <string name="rastrapatiBhawanInfo">
+        Although not fully accessible, Rashtrapati Bhawan, the residence of President of India, is still one of the best Delhi sightseeing places and a popular tourist place near Delhi. Spread in a vast area of 200,000 sq. ft. with 340 rooms, a painstakingly manicured presidential gardens or Mughal Gardens, staff quarters, stables, and enormous open spaces, this monument is surely a must visit Delhi Attraction.
+    </string>
+
+    <string name="jantarMantar">Jantar Mantar</string>
+    <string name="jantarMantarInfo">
+        One of the five giant sundials cum astronomical observatories constructed by Maharaja Jai Singh II, Jantar Mantar is a major attraction of the city, worth beholding. This astronomical observatory is one of the most fascinating places to visit in Delhi. Although, the surrounding tall buildings make it impossible to obtain accurate results now, visiting this scientific marvel is definitely one of the most popular Things to Do in Delhi.
+    </string>
+
+    <string name="redFort">Red Fort</string>
+    <string name="redFortInfo">
+        The face of the Indian Capital, Red Fort is a famous Tourist Places in Delhi which was built in 1638. A great Mughal monument, it is entirely made up of red sandstone and displays imposing walls, marvellous architecture, chhata bazaar, and entertaining light and sound show which are especially attractive. This epitome of Mughal era is a very popular tourist place in Delhi. The Red Fort is one of those places to visit in Delhi with friends and family.
+    </string>
+    
+    <string name="lotusTemple">Bahai (Lotus) Temple</string>
+    <string name="lotusTempleInfo">
+        A wonderful example of secularism, Bahai temple, famously called as Lotus temple symbolizes the unity of four religions viz. Hinduism, Islam, Buddhism and Jainism. The Bahai or Lotus Temples easily makes a spot for its self among the list of among the list of top tourist places in Delhi. Manifesting the secular faith of Bahai community, this magnificent temple has its doors opened for people of religions and beliefs.
+    </string>
+
+    <string name="gurudwaraBanglaSahib">Gurudwara Bangla Sahib</string>
+    <string name="gurudwaraBanglaSahibInfo">
+        A highly popular religious site visited not just by the Sikh community but the masses, it is both a peaceful spiritual abode and a famous Delhi Tourist Attraction. Built-in 1783 by a Sikh general Baghel Singh, the gurudwara complex consists of a lovely Sarovar, a school, hospital museum and a library as well. This peaceful tourist place is a must visit tourist place near Delhi.
+    </string>
+
+    <string name="akshardhamTemple">Akshardham Temple</string>
+    <string name="akshardhamTempleInfo">
+        Built not long back, Swaminarayan Akshardham Temple is the largest Hindu temple and one of the most gorgeous Delhi Sightseeing Places. Constructed in pink stone and marble, it is indeed one of the Best Places in Delhi for Family tours. For those who wish to visit the night show, the Akshardham Temple is one of the beautiful tourist places in Delhi to visit at night.
+    </string>
+
+    <!-- 5 Activity Places [delhi] -->
+
+    <string name="nehruPlanetarium">Nehru Planetarium</string>
+    <string name="nehruPlanetariumInfo">
+        Don’t be fooled, this is one of the coolest shows of space you will ever see making Nehru Planetarium one of the fun places in Delhi for youngsters.
+        Rather than a conventional outing, spend a leisurely time gazing at the stars and planets on an awesome journey to outer space. You know what?? This is the ideal romantic date for some quiet quality time together under the stars.
+    </string>
+    
+    <string name="smaaash">Smaaash</string>
+    <string name="smaaashInfo">
+        Smaaash is a full package of exciting games, virtual reality, energetic music and delicious food. Although it is famous as one of the fun places in Delhi for youngsters, you can be of any age, and you will find something here, which will interest you. So, this makes it an ideal place for any type of get together and one of the best places to visit in Delhi for fun.
+    </string>
+    
+    <string name="kittuSu">Kitty SU</string>
+    <string name="kittuSuInfo">
+        Kitty SU is one of the hippest, sophisticated discos in Delhi. Located in The Lalit, it’s one of the great spots in Delhi to enjoy nightlife. You can arrange all night DJ parties or simply groove the night away on a weekend.
+    </string>
+
+    <string name="mystryRooms">Mystery Rooms</string>
+    <string name="mystryRoomsInfo">
+        Here’s another mystery challenge. The interactive and highly entertaining mystery room game will set you off on a spree of adventurous missions like diffusing a bomb in “The Hurt Locker” or escaping prison in “Lockout” and it is one of the famous places to visit in Delhi for fun.
+    </string>
+
+    <string name="paintballCo">Paintball Co</string>
+    <string name="paintballCoInfo">
+        If you love going crazy over paintball and want some real fun physical activity, then Paintball Co offers one of the best adventure places in Delhi for youngsters and also one of the coolest things to do in Delhi for youngsters.
+    </string>
+
 
 </resources>
