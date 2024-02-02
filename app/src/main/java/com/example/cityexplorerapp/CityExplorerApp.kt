@@ -23,7 +23,7 @@ fun SuperHeroTopBar(){
     CenterAlignedTopAppBar(
         title = {
             Text(
-                text = "Superheroes",
+                text = "Choose your city",
                 style = MaterialTheme.typography.displayLarge
             )
         }

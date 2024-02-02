@@ -6,6 +6,7 @@ import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.spring
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -19,6 +20,10 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
@@ -30,12 +35,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.cityexplorerapp.R
 import com.example.cityexplorerapp.datasource.DataSource
-import com.example.cityexplorerapp.model.CityModel
+import com.example.cityexplorerapp.model.CommonModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CityScreen(
-    cityDetails: CityModel,
+    cityDetails: CommonModel,
     onCardClicked: () -> Unit
 ) {
     Card(
@@ -61,53 +66,14 @@ fun CityScreen(
 //                .background(color = color)
         ) {
             Row {
-                CityImage(cityDetails.cityImage)
-                CityText(cityDetails.cityName, cityDetails.twoCityLines)
+                Image(cityDetails.image,  cityDetails)
+                Text(cityDetails.name, cityDetails.info)
             }
         }
     }
 }
 
 
-@Composable
-fun CityImage(
-    @DrawableRes icon: Int
-){
-    Image(
-        painter = painterResource(id = icon),
-        contentDescription = "null",
-        modifier = Modifier
-            .size(dimensionResource(id = R.dimen.image_size))
-            .padding(dimensionResource(id = R.dimen.padding_normal))
-            .clip(MaterialTheme.shapes.small),
-        contentScale = ContentScale.FillBounds
-    )
-}
-
-@Composable
-fun CityText(
-    @StringRes cityName: Int,
-    @StringRes city2Lines: Int
-){
-    Column(
-        modifier = Modifier
-            .padding(top = 16.dp, bottom = 16.dp, end = 16.dp)
-            .fillMaxSize()
-    ) {
-        Text(
-            text = stringResource(id = cityName),
-            modifier = Modifier,
-            style = MaterialTheme.typography.displayMedium
-        )
-        Text(
-            text = stringResource(id = city2Lines),
-            modifier = Modifier,
-            style = MaterialTheme.typography.bodyLarge,
-            maxLines = 2,
-            overflow = TextOverflow.Ellipsis
-        )
-    }
-}
 
 @Preview(showSystemUi = true)
 @Composable
