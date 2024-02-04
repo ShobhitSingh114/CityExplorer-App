@@ -20,7 +20,8 @@ import com.example.cityexplorerapp.model.CommonModel
 @Composable
 fun PlacesToVisitScreen(
     placesDetails: CommonModel,
-    onCardClicked: () -> Unit
+    onCardClicked: () -> Unit,
+    modifier: Modifier = Modifier
 ) {
     Card(
         modifier = Modifier

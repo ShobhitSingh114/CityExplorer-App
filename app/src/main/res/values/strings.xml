@@ -6,6 +6,7 @@
     <string name="choose_your_city">Choose Your City</string>
     <string name="places_to_visit">Places to visit in %s</string>
     <string name="activity_places">Activity Places in %s</string>
+    <string name="back_button">Back</string>
 
 
     <!-- city -->

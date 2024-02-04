@@ -41,7 +41,8 @@ import com.example.cityexplorerapp.model.CommonModel
 @Composable
 fun CityScreen(
     cityDetails: CommonModel,
-    onCardClicked: () -> Unit
+    onCardClicked: () -> Unit,
+    modifier: Modifier = Modifier
 ) {
     Card(
         modifier = Modifier
