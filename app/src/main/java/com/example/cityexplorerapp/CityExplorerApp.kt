@@ -37,8 +37,11 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.cityexplorerapp.datasource.DataSource
+import com.example.cityexplorerapp.ui.ActivityPlacesScreen
+import com.example.cityexplorerapp.ui.CityExplorerBottomBar
 import com.example.cityexplorerapp.ui.CityScreen
 import com.example.cityexplorerapp.ui.ExplorerViewModel
+import com.example.cityexplorerapp.ui.PlacesToVisitScreen
 
 // TODO: Screeon enum
 enum class CityExplorerScreen(@StringRes val title: Int) {
@@ -92,7 +95,7 @@ fun CityExplorerApp() {
         topBar = { CityExplorerTopBar(currentScreen = currentScreen,
             canNavigateBack = navController.previousBackStackEntry != null,
             navigateUp = { navController.navigateUp() }) },
-        bottomBar = { CityExplorerBottomBar() }
+//        bottomBar = { CityExplorerBottomBar() }
     ) { ip ->
         NavHost(navController = navController, startDestination = CityExplorerScreen.CityScreen.name) {
             // citySCreen
@@ -112,8 +115,8 @@ fun CityExplorerApp() {
             composable(CityExplorerScreen.PlacesToVisitScreen.name) {
                 LazyColumn(contentPadding = ip) {
                     items(DataSource.placles) {
-                        CityScreen(
-                            cityDetails = it,
+                        PlacesToVisitScreen(
+                            placesDetails = it,
                             onCardClicked = { navController.navigate(CityExplorerScreen.ActivityPlacesScreen.name) }
                         )
                     }
@@ -123,9 +126,9 @@ fun CityExplorerApp() {
             composable(CityExplorerScreen.ActivityPlacesScreen.name) {
                 LazyColumn(contentPadding = ip) {
                     items(DataSource.activity) {
-                        CityScreen(
-                            cityDetails = it,
-                            onCardClicked = { navController.navigate(CityExplorerScreen.PlacesToVisitScreen.name) }
+                        ActivityPlacesScreen(
+                            activityDetails = it,
+                            onCardClicked = {}
                         )
                     }
                 }
@@ -134,40 +137,6 @@ fun CityExplorerApp() {
     }
 }
 
-@Composable
-fun CityExplorerBottomBar() {
-
-    BottomAppBar(
-        modifier = Modifier
-            .fillMaxWidth()
-    ) {
-        Row(
-            modifier = Modifier,
-            horizontalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_normal))
-        ) {
-            OutlinedButton(
-                onClick = { /*TODO*/ },
-                modifier = Modifier
-                    .weight(1f)
-                    .padding(start = dimensionResource(id = R.dimen.padding_small))
-            ) {
-                Text(text = "cancel")
-            }
-
-            Button(
-                onClick = { /*TODO*/ },
-                // this is how to change button color
-//                colors = ButtonDefaults.buttonColors(MaterialTheme.colorScheme.),
-                modifier = Modifier
-                    .weight(1f)
-                    .padding(end = dimensionResource(id = R.dimen.padding_small))
-            ) {
-                Text(text = "next")
-            }
-        }
-    }
-
-}
 
 
 @Preview(showSystemUi = true)
